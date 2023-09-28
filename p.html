@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./p.css">
+    <link rel="stylesheet" href="./output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saba7o</title>
+</head>
+<body class="overflow-hidden bg-slate-300">
+    
+    <div id="container" class="w-screen lg:w-full">
+        <header id="head" class="w-screen lg:w-full fixed flex justify-between items-center p-6">
+            <h1 class="text-4xl lg:text-5xl">صباحو تحدي</h1>
+
+            <aside id="menu" class="w-16 h-16 lg:w-20 lg:h-20 p-2 bg-yellow-50 flex flex-col justify-between items-center rounded-lg cursor-pointer">
+                <span class=" w-8 h-1 bg-orange-500"></span>
+                <span class=" w-8 h-1 bg-orange-500"></span>
+                <span class=" w-8 h-1 bg-orange-500"></span>
+            </aside>
+        </header>
+
+        <div id="nav" class="w-screen lg:w-full">
+            <div id="links" class="w-screen lg:w-full text-center flex-col flex justify-between">
+                <a href="#" id="t" class="text-6xl lg:text-7xl mb-9">تمثيل</a>
+                <a href="#" id="f" class="text-6xl lg:text-7xl mb-9">5 * 10</a>
+                <a href="#" class="text-6xl lg:text-7xl ">كلمة السر</a>
+            </div>
+            <div id="exitMenu" class="right-0 absolute w-13 text-center text-5xl lg:text-7xl p-2  cursor-pointer">X</div>
+        </div>
+
+
+
+        <div id="home" class="w-screen lg:w-full text-center">
+            <h1 class="text-5xl lg:text-6xl ">تحدي في معلومات كرة القدم</h1>
+        </div>
+
+
+        <div id="who" class="w-screen lg:w-full">
+           <div id="WhoContent">
+                <div id="WhoBtns" class="w-screen lg:w-full flex justify-around items-center mb-7">
+                    <button id="showE" class="border-2 border-green-700 w-56 p-1 rounded-lg text-3xl">لاعب اوروبي</button>
+                    <button id="showM" class="border-2 border-green-700 w-56 p-1 rounded-lg text-3xl">لاعب محلي</button>
+                </div>
+                <img id="WhoMain" src="./download.jpg" class="w-7/12 h-72 lg:h-72 p-2 lg:w-screen ">
+                <h1 id="WhoNames" class="bg-slate-300 w-52 p-2 mt-3 rounded-md h-11 text-center text-2xl"></h1>
+                <button id="WhoTimer" class="w-20 h-20 mt-3 rounded-full border-2 border-green-700 text-2xl">ابدا</button>
+                <button id="WhoStop" class="w-20 h-20 mt-3 rounded-full border-2 border-green-700 text-2xl">توقف</button>
+                <audio controls src="./old-alarm-sound_gdMsEsXK.mp3" class="hidden" preload="metadata" id="WhoAudio"></audio>
+           </div>
+           <div id="exitWho" class="w-10 h-10 lg:h-12 lg:w-12 text-center flex justify-center items-center text-3xl rounded-lg">X</div>
+        </div>
+       
+
+        <div id="five" class="w-screen lg:w-full">
+            <div id="fContent" class="w-screen lg:w-full">
+                <h1 id="board" class="w-2/3 h-48 text-3xl bg-slate-200 overflow-scroll rounded-md p-2 lg:w-1/2 lg:h-60"></h1>
+                <button id="showQ" class="border-2 border-green-700 w-56 mt-3 p-1 rounded-lg text-3xl">اعرض السؤال</button>
+                <button id="fTimer" class="outline-none w-20 h-20 mt-3 rounded-full border-2 border-green-700 text-2xl">ابدا</button>
+                <button id="fStop" class="outline-none w-20 h-20 mt-3 rounded-full border-2 border-green-700 text-2xl">توقف</button>
+            </div>
+            <div id="exitFive" class="w-10 h-10 lg:h-12 lg:w-12 text-center flex justify-center items-center text-3xl rounded-lg cursor-pointer">X</div>
+
+        </div>
+
+
+    </div>
+    
+    
+
+
+
+
+
+
+
+<script src="./PhotosE.js"></script>
+<script src="./photos.js"></script>
+<script src="./Passe.js"></script>
+<script src="./Passm.js"></script>
+<script src="./questions.js"></script>
+
+<script src="./p.js"></script>    
+</body>
+</html>

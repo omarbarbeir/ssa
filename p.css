@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barriecito&family=Creepster&family=Fredericka+the+Great&family=Lalezar&family=Lilita+One&display=swap');
+
+body{
+    font-family: 'Lalezar', cursive;
+
+}
+#home{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: 0.3s;
+    transition-delay: 0.6s;
+}
+#home.active{
+    display: none;
+}
+#head.active{
+    display: none;
+}
+#nav{
+    background: linear-gradient(to right top,#8c366c,darkcyan);
+    z-index: 1000;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: 0.4s ease;
+}
+#nav.active{
+    transform: translateX(0);
+}
+#links{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#links a{
+    background-image: linear-gradient(to right,#075e54,darkcyan);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;
+    cursor: pointer;
+}
+#exitMenu{
+    border-bottom-left-radius: 5px;
+    background-image: linear-gradient(to right,#075e54,darkcyan);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;
+    border:1px solid #fff;
+}
+#who{
+    z-index: 9999;
+    background: linear-gradient(to right bottom,#5e3a0c,#fce48e);
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+    position: absolute;
+    top:0
+}
+#who.active{
+    transform: translateX(0);
+}
+#WhoContent{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#exitWho{
+    position: absolute;
+    right:0;
+    bottom:0;
+    background: #fff;
+}
+#WhoMain.active{
+    display: block;
+}
+#WhoTimer.active{
+    display: none;
+}
+#five{
+    z-index: 9999;
+    background: linear-gradient(to right bottom,#5e3a0c,#fce48e);
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+    position: absolute;
+    top:0
+}
+#five.active{
+    transform: translateX(0);
+
+}
+#fContent{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 70px;
+}
+.none{
+    pointer-events: none;
+}
